@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendix Portal</title>
+  <link rel="stylesheet" href="./stylesheets/style.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/04/18/04/20250418041142-2GTKWD41.js"></script>
+</head>
+<body>
+
+  <div class="loader">
+    <canvas id="stars-canvas"></canvas> 
+    <div class="fadeeffect">
+      <span>A</span>
+      <span>T</span>
+      <span>T</span>
+      <span>E</span>
+      <span>N</span>
+      <span>D</span>
+      <span>I</span>
+      <span>X</span>
+    </div>
+  </div>
+
+
+  <div class="main-content">
+    <header class="navbar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-4RjauYX2DOUSy1XdVRtKwOicRF9kq-kXQ&s" alt="Logo" class="logo" />
+      <h1 class="app-name">Attendi</h1>
+      <h1 class="app-name2">X</h1>
+    </header>
+
+    <section class="hero-section">
+      <div class="login-box teacher-login">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Bwz8-TWJNKPdLhikrDm97LAOm7OJQgCIgQ&s" alt="">
+        <a href = "/login2"><h2><i class="fas fa-chalkboard-teacher"></i><button onclick="teacherLogin()">Login as Teacher</button></h2></a>
+      </div>
+
+      <div class="login-box student-login">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/004/607/791/small_2x/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector.jpg" alt="">
+        <a href = "/bhak"><h2><i class="fas fa-user-graduate"></i><button onclick="studentLogin()">Login as Student</button></h2></a>
+      </div>
+    </section>
+  </div>
+
+  <script src="./javascripts/portal.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+  -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendix Portal</title>
+  <link rel="stylesheet" href="./stylesheets/style.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/04/18/04/20250418041142-2GTKWD41.js"></script>
+</head>
+<body>
+
+  <div class="loader">
+    <canvas id="stars-canvas"></canvas> 
+    <div class="fadeeffect">
+      <span>A</span>
+      <span>T</span>
+      <span>T</span>
+      <span>E</span>
+      <span>N</span>
+      <span>D</span>
+      <span>I</span>
+      <span>X</span>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header class="navbar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-4RjauYX2DOUSy1XdVRtKwOicRF9kq-kXQ&s" alt="Logo" class="logo" />
+      <h1 class="app-name">Attendi</h1>
+      <h1 class="app-name2">X</h1>
+    </header>
+
+    <section class="hero-section">
+
+      <!-- Theme Toggle -->
+      <button id="theme-switch">
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 240q-17 0-28.5-11.5T440-160v-80q0-17 11.5-28.5T480-280q17 0 28.5 11.5T520-240v80q0 17-11.5 28.5T480-120Zm0-600q-17 0-28.5-11.5T440-760v-80q0-17 11.5-28.5T480-880q17 0 28.5 11.5T520-840v80q0 17-11.5 28.5T480-720ZM240-480q0 17-11.5 28.5T200-440h-80q-17 0-28.5-11.5T80-480q0-17 11.5-28.5T120-520h80q17 0 28.5 11.5T240-480Zm720 0q0 17-11.5 28.5T920-440h-80q-17 0-28.5-11.5T800-480q0-17 11.5-28.5T840-520h80q17 0 28.5 11.5T960-480ZM200-280q-11 14-27 15.5T140-276q-14-11-15.5-27t8.5-29l56-56q12-12 29-10t27 16q10 14 8.5 30T200-280Zm620-404q-11 14-27.5 15.5T765-672q-14-11-15.5-27t8.5-29l56-56q12-12 28.5-10t26.5 16q10 14 9 30t-14 26l-56 56Zm56 404-56-56q-12-12-10-28.5t16-27.5q14-10 30-8.5t26 15.5q11 14 10 30t-15 27l-56 56q-12 12-28.5 10T820-276ZM140-684l56 56q12 12 10 28.5T190-572q-14 10-30 8.5T134-578q-10-14-8.5-30T140-634l56-56q12-12 28.5-10T252-680q10 14 8.5 30T240-684l-56-56Z"/>
+        </svg>
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="M520-80q-142 0-241-99t-99-241q0-106 59-193.5T440-760q4 0 7.5 1.5T454-754q12 9 11 24.5T451-705q-11 24-16.5 49T429-604q0 108 76 184t184 76q26 0 51.5-5.5T790-370q16-7 31.5-1.5T832-341q4 5 5.5 12t-1.5 14q-29 95-109.5 155T520-80Z"/>
+        </svg>
+      </button>
+
+      <div class="login-box teacher-login">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Bwz8-TWJNKPdLhikrDm97LAOm7OJQgCIgQ&s" alt="">
+        <a href="/login2"><h2><i class="fas fa-chalkboard-teacher"></i><button onclick="teacherLogin()">Login as Teacher</button></h2></a>
+      </div>
+
+      <div class="login-box student-login">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/004/607/791/small_2x/man-face-emotive-icon-smiling-male-character-in-blue-shirt-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector.jpg" alt="">
+        <a href="/bhak"><h2><i class="fas fa-user-graduate"></i><button onclick="studentLogin()">Login as Student</button></h2></a>
+      </div>
+    </section>
+  </div>
+
+  <script src="./javascripts/portal.js"></script>
+</body>
+</html>
+

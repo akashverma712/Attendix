@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white">
+        <h3 class= "text-3xl mb-5">Teacher Login Page</h3>
+        <form method = "post" action = "/login2">
+            <input class = "px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type = "text" placeholder = "Name" name = "name">
+            <input class = "px-3 py-2 rounded-md outline-none bg-transparent border-2 border-zinc-800" type="text" placeholder="Registration Number" name="rgt_number">
+  
+            <input class = "px-5 py-2 rounded-md bg-blue-500"type = "submit" value = "Login Account">  
+        </form>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teacher Login - Attendance System</title>
+   <link rel="stylesheet" href="./stylesheets/login2.css">
+   <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+   <script src="https://files.bpcontent.cloud/2025/04/18/04/20250418041142-2GTKWD41.js"></script>
+</head>
+
+<body>
+   <div class="login-container">
+      <div class="login-box">
+         <h2>Teacher Login</h2>
+         <form id="loginForm" method = "post" action = "/login2">
+            <div class="input-group">
+               <label for="username">Username</label>
+               <input type="text" id="username" name = "name" required>
+            </div>
+            <div class="input-group">
+               <label for="password">Password</label>
+               <input type="password" id="password" name = "rgt_number"required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+         </form>
+      </div>
+   </div>
+
+   <!-- <div class="login-form">
+      <h2>Student Login</h2>
+      <form id="loginForm" method="post" action="/">
+          <div class="input-group">
+              <i class="bx bx-user"></i>
+              <input class = "gap" name="email" type="text" id="username" placeholder="Username" required>
+          </div>
+          <div class="input-group">
+              <i class="bx bx-lock"></i>
+              <input class = "gap" type="password" name="unique_id" id="password" placeholder="Password" required>
+          </div>
+          <button  type="submit" class="btn">Login</button>
+      </form>
+  </div>
+</div> -->
+   <script src="script.js"></script>
+</body>
+
+</html>
